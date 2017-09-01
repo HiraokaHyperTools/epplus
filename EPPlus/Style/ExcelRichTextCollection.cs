@@ -214,6 +214,7 @@ namespace OfficeOpenXml.Style
         {
             TopNode.RemoveChild(_list[Index].TopNode);
             _list.RemoveAt(Index);
+            UpdateCells();
             if (_cells != null && _list.Count==0) _cells.IsRichText = false;
         }
         /// <summary>
@@ -224,6 +225,7 @@ namespace OfficeOpenXml.Style
         {
             TopNode.RemoveChild(Item.TopNode);
             _list.Remove(Item);
+            UpdateCells();
             if (_cells != null && _list.Count == 0) _cells.IsRichText = false;
         }
         //public void Insert(int index, string Text)
