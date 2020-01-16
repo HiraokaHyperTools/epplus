@@ -224,7 +224,11 @@ namespace OfficeOpenXml.FormulaParsing
                     string adrWb, adrWs, adrName;
                     ExcelNamedRange name;
                     ExcelAddressBase.SplitAddress(t.Value, out adrWb, out adrWs, out adrName, f.ws==null ? "" : f.ws.Name);
-                    if (!string.IsNullOrEmpty(adrWs))
+                    if (!string.IsNullOrEmpty(adrWb))
+                    {
+                        name = null;
+                    }
+                    else if (!string.IsNullOrEmpty(adrWs))
                     {
                         if (f.ws == null)
                         {
