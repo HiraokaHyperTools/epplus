@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>HiraokaHyperTools.EPPlus</id>
+    <title>HiraokaHyperTools.EPPlus</title>
+    <version>0.1</version>
+    <authors>kenjiuno, jankallman, swmal</authors>
+    <owners>kenjiuno</owners>
+    <projectUrl>https://github.com/HiraokaHyperTools/epplus</projectUrl>
+    <license type="expression">LGPL-3.0-or-later</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Private EPPlus package</description>
+    <releaseNotes>Some changes made to this private package!</releaseNotes>
+    <copyright>Copyright 2020 Hiraoka Hyper Tools, Inc.</copyright>
+    <tags>Private EPPlus</tags>
+    <repository type="git" url="https://github.com/HiraokaHyperTools/epplus.git" branch="dev-ng" />
+    <language>ja</language>
+  </metadata>
+</package>
