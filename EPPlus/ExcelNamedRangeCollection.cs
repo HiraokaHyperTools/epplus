@@ -87,6 +87,10 @@ namespace OfficeOpenXml
 
         private void AddName(string Name, ExcelNamedRange item)
         {
+            if (_dic.ContainsKey(Name))
+            {
+                return;
+            }
             _dic.Add(Name, _list.Count);
             _list.Add(item);
         }
