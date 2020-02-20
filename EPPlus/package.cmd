@@ -1,1 +1,1 @@
-nuget pack EPPlus.csproj -Properties Configuration=Release
+nuget pack EPPlus.csproj -Build -Properties Configuration=Release
